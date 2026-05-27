@@ -689,6 +689,14 @@ video {
   width: 3rem;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -1048,6 +1056,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
