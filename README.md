@@ -28,12 +28,11 @@ The course is structured into 3 main levels:
 ## 📁 Repository Structure
 
 ```bash
-it-learning-coding-diploma/
-│
-├── Practical Activities/
-│   ├── Module 1/
-│   ├── Module 2/
-│   ├── Module 3/
-│   ├── Module 4/
-│   ├── Module 5/
-│   └── Tailwind/
+Practical Activities/
+├── module-02-first-web-page/
+├── module-03-navigation-divs-text-formatting/
+├── module-04-semantic-layout/
+├── module-05-forms-or-media/
+├── module-06-implementing-iframes/
+├── tailwind-showcase/
+└── npm-tailwind-practice/
