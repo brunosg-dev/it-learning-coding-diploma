@@ -33,7 +33,9 @@
             </div>
             <div class="form-group">
                 <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                <!-- Accepts 07123456789, +447123456789, 02012345678, etc. -->
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 07123 456789"
+                    pattern="^(?:\+44|0)7?\d{9,10}$" required>
             </div>
             <div class="form-group">
                 <label for="subject">Subject</label>
