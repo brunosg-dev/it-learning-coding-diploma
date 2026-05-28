@@ -86,6 +86,30 @@ h2 {
 }
 
 /* =========================
+   Iframe Controls
+========================= */
+.iframe-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.iframe-controls button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.iframe-controls button:hover {
+    background-color: #374151;
+}
+
+/* =========================
    Footer Section
 ========================= */
 footer {
@@ -110,5 +134,16 @@ footer {
 
     .iframe-container {
         padding-bottom: 75%;
+    }
+
+    .iframe-controls {
+        flex-direction: column;
+    }
+
+.iframe-controls button {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0.5rem;
     }
 }
