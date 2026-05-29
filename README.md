@@ -1,6 +1,6 @@
 # IT Learning Coding Diploma 🚀
 
-This repository contains my progress and practical work from the **IT Learning Coding Diploma** program.
+This repository contains my progress and practical work from the **IT Online Learning Coding Diploma** program.
 
 ## 📚 Course Overview
 
