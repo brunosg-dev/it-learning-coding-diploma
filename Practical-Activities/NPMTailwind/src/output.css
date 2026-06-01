@@ -628,6 +628,10 @@ video {
   height: 1.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .min-h-\[280px\] {
   min-height: 280px;
 }
@@ -800,6 +804,10 @@ video {
   background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
 }
 
+.bg-page\/60 {
+  background-color: rgb(2 6 23 / 0.6);
+}
+
 .bg-page\/70 {
   background-color: rgb(2 6 23 / 0.7);
 }
@@ -869,6 +877,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -924,6 +937,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -932,8 +950,20 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
