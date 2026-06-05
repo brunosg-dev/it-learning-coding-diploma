@@ -8,19 +8,19 @@
     <title>Document</title>
 </head>
 
-<body class="bg-page text-white min-h-screen">
+<body class="min-h-screen overflow-x-hidden bg-page text-white">
 
     <!----------------------Header / Navigation  ------------------>
 
     <header>
-        <nav class="flex items-center justify-between px-8 py-6">
+        <nav class="flex items-center justify-between px-4 py-5 sm:px-8 sm:py-6">
             <!-- Logo -->
-            <div class="flex items-center gap-3">
+            <div class="flex min-w-0 items-center gap-3">
                 <span class="text-brandBlue text-2xl font-bold">&lt;/&gt;</span>
-                <a href="#" class="text-xl font-bold tracking-wide">Tailwind CLI</a>
+                <a href="#" class="truncate text-lg font-bold tracking-wide sm:text-xl">Tailwind CLI</a>
             </div>
             <!-- Right Navigation Group -->
-            <div class="flex items-center gap-16">
+            <div class="hidden items-center gap-16 md:flex">
                 <ul class="flex items-center gap-8">
                     <li><a href="#" class="text-textSoft hover:text-white transition-colors duration-300">Overview</a>
                     </li>
@@ -45,29 +45,30 @@
         <section
             class="mx-4 mt-1 flex flex-col items-center justify-center gap-10 overflow-hidden rounded-3xl border border-panelLight bg-gradient-to-br from-panel via-slate-900 to-purple-950 px-6 py-12 lg:flex-row lg:gap-24 lg:px-12 lg:py-16">
             <!----- Hero Content ----->
-            <div class="max-w-xl">
-                <div class="max-w-xl">
-                    <p
-                        class="inline-flex items-center gap-2 rounded-full border border-transparent bg-brandPurple/10 px-4 py-1 text-sm font-medium text-white">
-                        <span class="mr-1 pb-1 text-2xl text-brandPurple">●</span>
-                        Practical Activity
-                    </p>
-                </div>
-                <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+            <div class="w-full max-w-xl min-w-0">
+                <p
+                    class="inline-flex items-center gap-2 rounded-full border border-transparent bg-brandPurple/10 px-4 py-1 text-sm font-medium text-white">
+                    <span class="mr-1 pb-1 text-2xl text-brandPurple">●</span>
+                    Practical Activity
+                </p>
+
+                <h1 class="mt-4 text-3xl font-bold leading-tight sm:text-5xl">
                     Tailwind CLI
 
                     <span class="block">
-                        <span class="bg-gradient-to-r from-brandBlue to-brandPurple bg-clip-text text-transparent">
+                        <span
+                            class="block bg-gradient-to-r from-brandBlue to-brandPurple bg-clip-text text-transparent sm:inline">
                             Learning
                         </span>
 
-                        <span class="bg-gradient-to-l from-brandBlue to-brandPurple bg-clip-text text-transparent ">
+                        <span
+                            class="block bg-gradient-to-l from-brandBlue to-brandPurple bg-clip-text text-transparent sm:inline">
                             Showcase
                         </span>
                     </span>
                 </h1>
 
-                <p class="mt-6 max-w-sm text-base leading-7 text-textSoft sm:text-lg sm:leading-8">
+                <p class="mt-6 max-w-md text-base leading-7 text-textSoft sm:text-lg sm:leading-8">
                     This page demonstrates my learning process using npm, Tailwind CLI,
                     a configuration file, and generated CSS output.
                 </p>
@@ -82,7 +83,8 @@
             </div>
 
             <!-------Code Preview Card------>
-            <div class="mt-6 w-full max-w-[380px] overflow-hidden rounded-2xl border border-panelLight bg-page/70 shadow-2xl lg:mt-16">
+            <div
+                class="mt-6 w-full max-w-[380px] overflow-hidden rounded-2xl border border-panelLight bg-page/70 shadow-2xl lg:mt-16">
                 <div class="flex items-center gap-2 border-b border-panelLight px-6 py-4">
                     <span class="h-3 w-3 rounded-full bg-red-500"></span>
                     <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -194,7 +196,8 @@
                         </p>
                     </div>
 
-                    <span class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
+                    <span
+                        class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
                         &gt;_
                     </span>
 
@@ -211,7 +214,8 @@
                         </span>
                         <p class="text-base font-medium sm:text-lg">Install Tailwind CSS</p>
                     </div>
-                    <span class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
+                    <span
+                        class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
                         &gt;_
                     </span>
                 </div>
@@ -226,7 +230,8 @@
                         </span>
                         <p class="text-base font-medium sm:text-lg">Create Tailwind config file</p>
                     </div>
-                    <span class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
+                    <span
+                        class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
                         &gt;_
                     </span>
                 </div>
@@ -241,7 +246,8 @@
                         </span>
                         <p class="text-base font-medium sm:text-lg">Create input.css and output.css</p>
                     </div>
-                    <span class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
+                    <span
+                        class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
                         &gt;_
                     </span>
                 </div>
@@ -256,7 +262,8 @@
                         </span>
                         <p class="text-base font-medium sm:text-lg">Link output.css to the HTML file</p>
                     </div>
-                    <span class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
+                    <span
+                        class="inline-flex w-fit self-start rounded-lg border border-panelLight px-3 py-2 font-mono text-textSoft sm:self-auto">
                         &gt;_
                     </span>
                 </div>
