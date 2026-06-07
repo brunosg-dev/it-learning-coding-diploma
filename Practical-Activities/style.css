@@ -1,0 +1,44 @@
+.intro-section .action-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro-section .action-link:hover,
+.intro-section .action-link:focus {
+    background-color: #374151;
+}
+
+.activities-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.activities-grid .project-card {
+    min-height: 390px;
+    padding: 1.5rem;
+}
+
+.activities-grid .project-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 1000px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-grid .project-card {
+        min-height: 0;
+    }
+}
