@@ -111,6 +111,19 @@ h2 {
     border: 1px solid #dbe1e8;
     border-radius: 8px;
     background-color: #f9fafb;
+    transition:
+        transform 0.28s ease,
+        border-color 0.28s ease,
+        box-shadow 0.28s ease,
+        background 0.28s ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+    background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.14);
 }
 
 .module-label {
@@ -184,6 +197,27 @@ h2 {
 }
 
 /* =========================
+   Scroll Reveal
+========================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+}
+
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card.reveal-visible:hover,
+.project-card.reveal-visible:focus-within {
+    transform: translateY(-4px);
+}
+
+/* =========================
    Footer
 ========================= */
 .site-footer {
@@ -203,6 +237,25 @@ h2 {
 
     .project-card {
         min-height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal,
+    .reveal.reveal-visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    .project-card:hover,
+    .project-card:focus-within {
+        transform: none;
     }
 }
 
