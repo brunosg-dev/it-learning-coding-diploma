@@ -28,11 +28,31 @@ The course is structured into 3 main levels:
 ## 📁 Repository Structure
 
 ```bash
-Practical Activities/
-├── module-02-first-web-page/
-├── module-03-navigation-divs-text-formatting/
-├── module-04-semantic-layout/
-├── module-05-forms-or-media/
-├── module-06-implementing-iframes/
-├── tailwind-showcase/
-└── npm-tailwind-practice/
+it-learning-coding-diploma/
+├── Practical-Activities/
+│   ├── module-02-first-web-page/
+│   ├── module-03-navigation-divs-text-formatting/
+│   ├── module-04-semantic-layout/
+│   ├── module-05-forms-or-media/
+│   ├── module-06-implementing-iframes/
+│   ├── tailwind/
+│   └── npm-tailwind/
+│
+├── Coding-Challenges/
+│   ├── challenge-01-build-a-personal-portfolio-page/
+│   ├── challenge-02-responsive-design/
+│   ├── challenge-03-css-animation/
+│   ├── challenge-04-form-styling/
+│   ├── challenge-05-flexbox-grid-layout/
+│   ├── challenge-06-typography/
+│   ├── challenge-07-image-gallery/
+│   ├── challenge-08-css-framework/
+│   ├── challenge-09-map-page/
+│   ├── challenge-10-accessibility/
+│   ├── challenge-11-psd-image-to-html-conversion/
+│   ├── challenge-12-html-email-template/
+│   └── challenge-13-web-application-ui-design/
+│
+├── README.md
+├── index.html
+└── style.css
