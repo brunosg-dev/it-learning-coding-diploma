@@ -1,32 +1,123 @@
-/* Global Styles */
-
+/* ----------------- Global Styles ---------------- */
+/* 1. Reset browser default spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* 2. Page behaviour */
 html {
     scroll-behavior: smooth;
 }
-
+/* 3. Main website style */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #08111f;
     color: #ffffff;
     line-height: 1.6;
 }
-
+/* 4. Default link style */
 a {
     color: #61dafb;
     text-decoration: none;
 }
-
+/* 5. Default list style */
 ul {
     list-style: none;
 }
-
+/* 6. Default image behaviour */
 img {
     max-width: 100%;
     display: block;
+}
+
+/* When starting a normal HTML/CSS page, I can usually begin my CSS like this:
+1. Global reset
+2. HTML behaviour
+3. Body base style
+4. Links
+5. Lists
+6. Images
+7. Reusable classes
+8. Section-by-section styling
+
+That is a strong structure to follow.
+
+A simple way to remember:
+Reset first.
+Set the page foundation.
+Then style the components.
+*/
+
+/* --------------- Header ---------------- */
+
+.header {
+    width: 100%;
+    padding: 20px 8%;
+    background-color: #0b1628;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Header logo */
+
+.header-logo {
+    display:flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: #00d4ff;
+}
+
+.logo-tagline {
+    font-size: 0.75rem;
+    color: #a8b3c7;
+}
+
+/* Navigation */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    color: #d5deef;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00d4ff;
+}
+
+/* Social links */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-link {
+    font-size: 0.8rem;
+    color: #a8b3c7;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #00d4ff;
 }
