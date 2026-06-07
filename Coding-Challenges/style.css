@@ -1,0 +1,57 @@
+.intro-section .action-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro-section .action-link:hover,
+.intro-section .action-link:focus {
+    background-color: #374151;
+}
+
+.challenges-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.challenges-grid .project-card {
+    min-height: 430px;
+    padding: 1.5rem;
+}
+
+.project-card .status-badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background-color: #e5e7eb;
+    color: #374151;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.project-card .status-in-progress {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+@media (max-width: 1000px) {
+    .challenges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .challenges-grid .project-card {
+        min-height: 0;
+    }
+}
