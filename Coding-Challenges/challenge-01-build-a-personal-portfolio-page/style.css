@@ -12,7 +12,7 @@ html {
 /* 3. Main website style */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #08111f;
+    background-color: #050d1a;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -53,9 +53,9 @@ Then style the components.
 
 .header {
     width: 100%;
-    padding: 20px 8%;
-    background-color: #0b1628;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px 3%;
+    background-color: #030b16;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.12);
 
     display: flex;
     justify-content: space-between;
@@ -72,18 +72,19 @@ Then style the components.
 }
 
 .logo-text {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: #ffffff;
+    letter-spacing: 0.5px;
 }
 
 .logo-text span {
-    color: #00d4ff;
+    color: #00d9ff;
 }
 
 .logo-tagline {
-    font-size: 0.75rem;
-    color: #a8b3c7;
+    font-size: 0.8rem;
+    color: #9ba8bd;
 }
 
 /* Navigation */
@@ -91,17 +92,29 @@ Then style the components.
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 34px;
 }
 
 .nav-link {
+    position: relative;
     font-size: 0.95rem;
-    color: #d5deef;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #00d4ff;
+    color: #00d9ff;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 2px;
+    background-color: #00d9ff;
 }
 
 /* Social links */
@@ -113,11 +126,12 @@ Then style the components.
 }
 
 .social-link {
-    font-size: 0.8rem;
-    color: #a8b3c7;
-    transition: color 0.3s ease;
+    font-size: 1.25rem;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-    color: #00d4ff;
+    color: #00d9ff;
+    transform: translateY(-2px);
 }
