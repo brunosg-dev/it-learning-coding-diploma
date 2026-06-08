@@ -9,12 +9,20 @@
 html {
     scroll-behavior: smooth;
 }
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* 3. Main website style */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #050d1a;
     color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 /* 4. Default link style */
 a {
@@ -48,6 +56,11 @@ Reset first.
 Set the page foundation.
 Then style the components.
 */
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 /* --------------- Header ---------------- */
 
@@ -154,4 +167,59 @@ Then style the components.
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+
+/* Header responsive layout */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 5%;
+        gap: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .header-logo {
+        align-items: center;
+    }
+
+    .logo-text {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+        line-height: 1.1;
+        max-width: 100%;
+    }
+
+    .logo-tagline {
+        font-size: 0.9rem;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 22px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 26px;
+    }
+
+    .social-link {
+        font-size: 1.4rem;
+    }
+
+    .nav-link.active::after {
+        bottom: -6px;
+    }
 }
