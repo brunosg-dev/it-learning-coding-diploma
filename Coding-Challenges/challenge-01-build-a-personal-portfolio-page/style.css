@@ -223,3 +223,49 @@ main {
         bottom: -6px;
     }
 }
+
+/* ---------------- Hero Section ---------------- */
+
+.hero {
+    min-height: 70vh;
+    padding: 80px 8%;
+    background-image: linear-gradient(rgba(3,11,22,0.55), rgba(3,11,22,0.75)), url("images/hero-bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 520px;
+    padding: 48px;
+    background-color: rgba(5, 13, 26, 0.78);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 24px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35)
+}
+
+.hero-icon {
+    font-size: 2rem;
+    color: #00d9ff;
+    margin-bottom: 2px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.hero-title span {
+    color: #00d9ff;
+}
+
+.hero-text {
+    font-size: 1.15rem;
+    color: #d5deef;
+    margin-bottom:32px;
+    max-width: 460px;
+}
