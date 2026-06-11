@@ -228,7 +228,8 @@ main {
 
 .hero {
     min-height: 70vh;
-    padding: 80px 8%;
+    padding: 25px 8%;
+    padding-bottom: 80px;
     background-image: linear-gradient(rgba(3,11,22,0.55), rgba(3,11,22,0.75)), url("images/hero-bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,7 +309,8 @@ main {
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
-        padding: 64px 5%;
+        padding: 25px 5%;
+        padding-bottom: 40px;
         align-items: flex-start;
     }
     .hero-content {
