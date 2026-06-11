@@ -303,3 +303,30 @@ main {
 .btn-secondary:hover {
     background-color: rgba(0, 217, 255, 0.1);
 }
+
+/* Hero responsive layout */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 64px 5%;
+        align-items: flex-start;
+    }
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 32px 24px;
+    }
+    .hero-title {
+        font-size: clamp(2.5rem, 12vw, 3.4rem);
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+     .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn {
+        text-align: center;
+    }
+}
