@@ -391,3 +391,25 @@ main {
     font-size: 0.95rem;
     color: #b8c4d8;
 }
+
+/* responsive CSS for sections and skills  */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 64px 5%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+     .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 24px;
+    }
+}
+
