@@ -364,3 +364,30 @@ main {
 .about-section {
     border-top: 1px solid rgba(0, 217, 255, 0.12);
 }
+
+/* Skills Section */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.skill-card {
+    padding: 28px;
+    background-color: rgba(11, 22, 40, 0.85);
+    border: 1px solid rgba(0, 217, 255, 0.18);
+    border-radius: 18px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+     transform: translateY(-6px);
+     border-color: rgba(0, 217, 255, 0.55);
+}
+
+.skill-card p {
+    font-size: 0.95rem;
+    color: #b8c4d8;
+}
