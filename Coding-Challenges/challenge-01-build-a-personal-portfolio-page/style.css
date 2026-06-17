@@ -474,3 +474,36 @@ main {
     }
 }
 
+/* Contact Section */
+
+.contact-section {
+    text-align: center;
+    border-top: 1px solid rgba(0, 217, 255, 0.12);
+}
+
+.contact-section .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section p {
+    margin: 0 auto 32px;
+    max-width: 680px;
+}
+
+.contact-section .btn {
+    padding: 14px 32px;
+}
+
+/* contact section responsive layout */
+
+@media (max-width: 768px) {
+.contact-section p {
+    font-size: 1rem;
+}
+
+.contact-section .btn {
+    width: 100%;
+    max-width: 320px;
+}
+}
