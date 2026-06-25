@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brunosg-dv | Personal Portfolio</title>
+    <title>Brunosg-dev | Personal Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,7 +51,7 @@
     <main>
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero reveal">
             <div class="hero-content">
 
                 <p class="hero-icon">&lt;/&gt;</p>
@@ -63,14 +63,14 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#about" class="btn btn-primary">Read More</a>
-                    <a href="#projects" class="btn btn-secondary">View Portfolio</a>
+                    <a href="https://brunosg-dev.github.io/bruno-gomes-portfolio/#home" class="btn btn-secondary">View Portfolio</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about-section section">
+        <section id="about" class="about-section section reveal">
             <h2 class="section-title">About Me</h2>
             <p>
                 I am a coding student currently learning frontend development through HTML, CSS, Tailwind CSS and
@@ -81,7 +81,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="skills-section section">
+        <section id="skills" class="skills-section section reveal">
             <h2 class="section-title">Skills</h2>
 
             <div class="skills-grid">
@@ -108,7 +108,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section section">
+        <section id="projects" class="projects-section section reveal">
             <h2 class="section-title">Projects</h2>
 
             <div class="projects-grid">
@@ -147,7 +147,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section section">
+        <section id="contact" class="contact-section section reveal">
             <h2 class="section-title">Contact</h2>
 
             <p>
@@ -205,6 +205,22 @@
         </p>
 
     </footer>
+    <script>
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(element => {
+            revealOnScroll.observe(element);
+        });
+    </script>
 </body>
 
 </html>
