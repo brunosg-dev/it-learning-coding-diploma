@@ -1,0 +1,105 @@
+/* =========================
+   Global reset
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Page foundation
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+}
+
+/* =========================
+   Reusable layout
+A reusable layout is a structural framework designed to be used multiple times across different pages, documents, or interfaces
+Efficiency: They prevent you from rebuilding identical layouts, saving significant development and design time.
+Consistency: They ensure elements like spacing, typography, and logos stay perfectly aligned across your entire project.   
+========================= */
+
+.container {
+    width: min(100% - 2rem, 1120px);
+    /* -- The min() function tells the browser to look at two 
+    different values and choose whichever one is smaller at 
+    that exact moment.
+    100% - 2rem: This takes the full width of the screen and 
+    subtracts a small amount of space (2rem, which is usually 
+    32 pixels total). This prevents the content from touching 
+    the very edges of mobile screens, creating a natural 
+    padding of 1rem (16px) on the left and right sides. 
+    1120px: This acts as a maximum boundary. It ensures your 
+    webpage content never stretches wider than 1120 pixels, 
+    keeping it readable on large desktop monitors. -- */
+    margin: 0 auto;
+}
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-container {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-text span {
+  color: #2563eb;
+  font-size: 1rem;
+}
+
+.menu-button {
+    border: 0;
+    background: none;
+    color: #0f172a;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.site-nav,
+.header-button {
+  display: none;
+}
