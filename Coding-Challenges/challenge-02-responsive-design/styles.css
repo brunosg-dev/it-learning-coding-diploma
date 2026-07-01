@@ -8,6 +8,14 @@
   padding: 0;
 }
 
+/* Prevent unwanted horizontal scrolling */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* =========================
    Page foundation
 ========================= */
@@ -26,8 +34,8 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
 ========================= */
 
 .container {
-    width: min(100% - 2rem, 1120px);
-    /* -- The min() function tells the browser to look at two 
+    /* -- width: min(100% - 2rem, 1120px);
+    The min() function tells the browser to look at two 
     different values and choose whichever one is smaller at 
     that exact moment.
     100% - 2rem: This takes the full width of the screen and 
@@ -38,7 +46,10 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     1120px: This acts as a maximum boundary. It ensures your 
     webpage content never stretches wider than 1120 pixels, 
     keeping it readable on large desktop monitors. -- */
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* =========================
@@ -55,7 +66,8 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -64,11 +76,13 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   gap: 0.75rem;
   color: #0f172a;
   text-decoration: none;
+  min-width: 0;
 }
 
 .logo-mark {
   width: 42px;
   height: 42px;
+  flex: 0 0 42px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -84,6 +98,7 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
+    min-width: 0;
 }
 
 .logo-text span {
@@ -95,6 +110,11 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     border: 0;
     background: none;
     color: #0f172a;
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: grid;
+    place-items: center;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -102,4 +122,77 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
 .site-nav,
 .header-button {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 2.75rem;
+    column-gap: 0.75rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .logo {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .logo-text,
+  .logo-text span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .menu-button {
+    display: grid;
+    justify-self: end;
+  }
+}
+
+/* =========================
+   Header - desktop layout
+========================= */
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .site-nav {
+    display:block;
+  }
+
+  .site-nav ul {
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .site-nav a {
+    color:#0f172a;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+
+  .site-nav a:hover {
+    color: #2563eb;
+  }
+
+  .header-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .header-button:hover {
+    background-color: #1d4ed8;
+  }
 }
