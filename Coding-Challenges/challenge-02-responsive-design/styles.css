@@ -124,18 +124,84 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   display: none;
 }
 
+/* =========================
+   Mobile navigation menu
+========================= */
+
+.site-nav.is-open {
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.site-nav.is-open ul {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 0 0;
+  list-style: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+.site-nav.is-open a {
+  display: block;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav.is-open a:hover {
+  color: #2563eb;
+}
+
 @media (max-width: 767px) {
   .header-container {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 2.75rem;
+    grid-template-rows: 72px auto;
     column-gap: 0.75rem;
     width: 100%;
     max-width: none;
+    align-items: center;
   }
 
   .logo {
+    grid-column: 1;
+    grid-row: 1;
     min-width: 0;
     overflow: hidden;
+  }
+
+  .menu-button {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    display: grid;
+    justify-self: end;
+  }
+
+   .site-nav.is-open {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .site-nav.is-open ul {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    margin-top: 0;
+    text-align: center;
+    list-style: none;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .site-nav.is-open a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
   }
 
   .logo-text,
@@ -145,10 +211,6 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     white-space: nowrap;
   }
 
-  .menu-button {
-    display: grid;
-    justify-self: end;
-  }
 }
 
 /* =========================
