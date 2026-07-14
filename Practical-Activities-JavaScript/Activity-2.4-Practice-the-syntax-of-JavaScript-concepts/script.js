@@ -47,3 +47,16 @@ sayGoodbye();
 alert("JavaScript practice file loaded!");
 
 
+// =============================
+// If / Else Practice
+// =============================
+
+//If the score is greater than or equal to 50, run the first block.
+//If not, JavaScript runs the else block.
+let score = 75;
+
+if (score >= 50) {
+    console.log("you passed the test!");
+} else {
+    console.log("you failed the test!");
+}
