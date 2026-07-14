@@ -60,3 +60,33 @@ if (score >= 50) {
 } else {
     console.log("you failed the test!");
 }
+
+
+// =============================
+// Switch Statement Practice
+// =============================
+
+//A switch is useful when you want to compare one value against multiple possible cases.
+
+let day = "Sunday";
+
+switch (day) { /* This line checks the value: */
+    case "Monday": /* Each case is one possible match. */
+        console.log("Today is Monday. Start the week strong!");
+        break; /*The break stops JavaScript from continuing into the next case. */
+
+    case "Tuesday":
+        console.log("Today is Tuesday. Keep going!");
+        break;
+
+    case "Friday":
+        console.log("Today is Friday. the weekend is close!");
+        break;
+
+    case "Sunday":
+        console.log("Today is Sunday. Time to relax!");
+        break;
+    
+    default:
+        console.log("It's a regular day."); /* The default runs if none of the cases match. */
+}
