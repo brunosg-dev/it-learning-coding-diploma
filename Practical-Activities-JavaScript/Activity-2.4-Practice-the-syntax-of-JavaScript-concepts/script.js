@@ -90,3 +90,42 @@ switch (day) { /* This line checks the value: */
     default:
         console.log("It's a regular day."); /* The default runs if none of the cases match. */
 }
+
+
+// =============================
+// Arrays Practice
+// =============================
+//An array stores multiple values in one variable. Array positions start from 0.
+
+// Array of strings
+const skills = ["HTML", "CSS", "JavaScript", "React"];
+
+// Array of numbers
+const scores = [85, 90, 78, 92];
+
+// Array of mixed data types
+const studentInfo = ["Bruno", 35, true, "Coding Diploma"];
+
+// Accessing array elements
+console.log("Skills:", skills);
+console.log("Scores:", scores);
+console.log("Student Info:", studentInfo);
+console.log("First skill:", skills[0]);
+console.log("Second score:", scores[1]);
+console.log("Student Name:", studentInfo[0]);
+console.log("Student Age:", studentInfo[1]);
+
+// =============================
+// Loop Through an Array Practice
+// =============================
+//A loop repeats code.
+
+const topics = ["Variables", "Functions","Conditionals", "Arrays", "loops"];
+// let i = 0; This part creates the loop counter. This means the loop starts at position 0.
+for (let i = 0; i < topics.length; i++) {
+    console.log("I am practicing:", topics[i]);
+}
+
+// i < topics.length; This part tells the loop how long to continue. Keep looping while i is less than the number of items in the array.
+// i++; This part increases the loop counter by 1 each time the loop runs. This means the loop will move to the next position in the array each time it runs.
+// topics[i]; This part tells the loop what to do each time it runs. In this case, it prints the current topic to the console. try changing the value of i to 1 and see what happens.
