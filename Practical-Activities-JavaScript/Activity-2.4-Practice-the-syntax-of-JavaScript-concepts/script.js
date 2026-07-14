@@ -116,6 +116,39 @@ console.log("Student Name:", studentInfo[0]);
 console.log("Student Age:", studentInfo[1]);
 
 // =============================
+// Objects Practice
+// =============================
+
+// An object stores related information using property names and values.
+// This creates an object called person. An object stores information using key-value pairs.
+let person = {
+  firstName: "Bruno",
+  lastName: "Silva Gomes",
+  age: 35,
+  city: "London",
+
+  // This is a method because it is a function inside an object.
+
+  fullName: function() {
+    return this.firstName + " " + this.lastName; /* It's a method, because it is a function inside the person object.*/
+  }
+};
+// return means: Send a value back from the function/method.
+// Inside the object, this means: This current object.
+// The + is joining strings together. This is called string concatenation. "Bruno" + "Gomes" would produce: BrunoGomes, No space.
+// So we add: " " That is just an empty space between quotation marks."Bruno" + " " + "Silva Gomes" produces: Bruno Silva Gomes.
+
+// accesing object properties
+console.log("First Name:", person.firstName); /* Then when you write: person.firstName you are saying:
+Go inside the person object and get the firstName property.*/
+console.log("Last Name:", person.lastName);
+console.log("Age:", person.age);
+console.log("City:", person.city);
+
+// calling the method to get the full name
+console.log("Full Name:", person.fullName());
+
+// =============================
 // Loop Through an Array Practice
 // =============================
 //A loop repeats code.
