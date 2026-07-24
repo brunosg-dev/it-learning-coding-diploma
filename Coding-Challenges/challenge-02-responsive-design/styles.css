@@ -258,3 +258,49 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     background-color: #1d4ed8;
   }
 }
+
+
+/* =========================
+   Hero - mobile base
+========================= */
+
+.hero {
+  padding: 4rem 0;
+  background-color: #f8fafc;
+}
+
+.hero-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero-content {
+  max-width: 34rem;
+}
+
+.hero h1 {
+  color: #0f172a;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.hero-description {
+  margin-top: 1.5rem;
+  color: #475569;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
