@@ -318,3 +318,32 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   width: 100%;
   height: auto;
 }
+
+/* =========================
+   Hero cards - mobile base
+========================= */
+
+.hero-cards {
+  display:grid;
+  gap: 1rem;
+}
+
+.hero-card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.hero-card h2 {
+  color: #0f172a;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.hero-card p {
+  margin-top: 0.75rem;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+}
