@@ -347,3 +347,37 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   font-size: 1rem;
   line-height: 1.6;
 }
+
+/* =========================
+   Hero - tablet and desktop
+========================= */
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 6rem 0;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    max-width: 36rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero-image {
+    align-self: stretch;
+  }
+
+  .hero-cards {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
