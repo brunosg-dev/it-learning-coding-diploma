@@ -305,19 +305,6 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   text-decoration: none;
 }
 
-.hero-image {
-  overflow: hidden;
-  border-radius: 1.25rem;
-  border: 1px solid #e2e8f0;
-  background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
-}
-
-.hero-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 /* =========================
    Hero cards - mobile base
@@ -371,13 +358,88 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     font-size: 4rem;
   }
 
-  .hero-image {
-    align-self: stretch;
-  }
-
   .hero-cards {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
+}
+
+/* =========================
+   Journal section - mobile base
+========================= */
+.journal-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.journal-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.journal-image {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 9px solid #0e1217;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.journal-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.journal-content h2 {
+  color: #0f172a;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.journal-content p {
+  margin-top: 1.5rem;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 18rem;
+}
+
+.journal-list {
+  display:grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  list-style: none;
+  color: #334155;
+}
+
+.journal-content h2::after {
+  content: "";
+  background-color: #2563eb;
+  display: block;
+  width: 4rem;
+  height: 0.25rem;
+  margin-top: 1rem;
+  border-radius: 999px;
+
+}
+
+/* =========================
+   Journal - tablet and desktop
+========================= */
+
+@media (min-width: 768px) {
+.journal-section {
+  padding: 5rem 0;
+}
+
+.journal-container {
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.journal-content h2 {
+  font-size: 3rem;
+}
 }
