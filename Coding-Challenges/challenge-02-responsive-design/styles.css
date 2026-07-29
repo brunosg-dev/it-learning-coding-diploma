@@ -443,3 +443,64 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   font-size: 3rem;
 }
 }
+
+/* =========================
+   Benefits section - mobile base
+========================= */
+
+.benefits-section {
+  padding: 4rem 0;
+  background-color: #f8fafc;
+}
+
+.benefits-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.benefit-icon {
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  font-size: 2rem;
+}
+
+.benefit-card h2 {
+  color: #0f172a;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.benefit-card p {
+  max-width: 18rem;
+  margin: 0.75rem auto 0;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   Benefits - tablet and desktop
+========================= */
+
+@media (min-width: 768px) {
+  .benefits-section {
+    padding: 5rem 0;
+  }
+
+.benefits-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
