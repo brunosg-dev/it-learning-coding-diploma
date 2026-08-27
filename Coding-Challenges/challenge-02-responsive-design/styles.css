@@ -601,3 +601,60 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
     font-size: 3rem;
   }
 }
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  padding: 3rem 0;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-footer .logo-text {
+  color: #ffffff;
+}
+
+.site-footer .logo-text span {
+  color: #60a5fa;
+}
+
+.site-footer p {
+  max-width: 36rem;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
