@@ -566,6 +566,22 @@ Consistency: They ensure elements like spacing, typography, and logos stay perfe
   color: #334155;
 }
 
+.review-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.review-list-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  display: grid;
+  place-items: center;
+  color: #2563eb;
+  font-size: 1.25rem;
+}
+
 /* =========================
    Review section - tablet and desktop
 ========================= */
