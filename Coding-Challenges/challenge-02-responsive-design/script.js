@@ -9,3 +9,9 @@ menuButton.addEventListener("click", function () {
   menuButton.setAttribute("aria-expanded", isOpen);
 });
 
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 768) {
+    siteNav.classList.remove("is-open");
+    menuButton.setAttribute("aria-expanded", "false");
+  }
+});
