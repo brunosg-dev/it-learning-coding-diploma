@@ -15,3 +15,17 @@ window.addEventListener("resize", function () {
     menuButton.setAttribute("aria-expanded", "false");
   }
 });
+
+// logic for the "Back to Top" button
+/* Find button
+Find navigation
+
+When button clicked:
+    open/close navigation
+    check whether it is open
+    update accessibility state
+
+When browser resized:
+    if width >= 768px
+        close mobile menu
+        reset accessibility state */
