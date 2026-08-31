@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Input Validation Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .description,
+        .logic-box {
+            border: 1px solid #040404;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .name-input {
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .check-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Input Validation Practice</h1>
+
+    <h2>Imagine someone tells you:</h2>
+
+    <div class="description">
+        <p>
+            “I want the user to type their name into an input.
+            When they click the button, JavaScript should check
+            whether they actually entered a name.
+            If the input is empty, ask them to enter their name.
+            Otherwise, display a greeting.”
+        </p>
+    </div>
+
+    <h2>Programming logic:</h2>
+
+    <div class="logic-box">
+        <p>Find the input</p>
+        <p>Find the button</p>
+        <p>Find the message</p>
+    </div>
+
+    <div class="logic-box">
+        <p>When the button is clicked:</p>
+        <p>read what the user typed</p>
+        <p>if the input is empty, show an error message</p>
+        <p>otherwise, show the greeting</p>
+    </div>
+
+    <input class="name-input" type="text" placeholder="Enter your name">
+
+    <button class="check-button">
+        Submit
+    </button>
+
+    <p class="message">
+        Your message will appear here.
+    </p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
