@@ -11,3 +11,4 @@ textInput.addEventListener('input', () => {
 "input" event → react whenever the input value changes
 length        → how many characters/items there are
 */
+
