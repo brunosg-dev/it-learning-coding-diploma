@@ -13,4 +13,4 @@ changeButton.addEventListener("click", () => {
     }
     });
 
-     //cludes() → check whether something contains this value/text
+     //includes() → check whether something contains this value/text

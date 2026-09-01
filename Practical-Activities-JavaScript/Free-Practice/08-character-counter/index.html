@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Character Counter Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .description,
+        .logic-box {
+            border: 1px solid #040404;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .text-input {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .character-count {
+            font-size: 1.4em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Character Counter Practice</h1>
+
+    <h2>Imagine someone tells you:</h2>
+
+    <div class="description">
+        <p>
+            “I want the user to type inside a text box.
+            While they are typing, the page should display
+            how many characters they have entered.”
+        </p>
+    </div>
+
+    <h2>Programming logic:</h2>
+
+    <div class="logic-box">
+        <p>Find the text input</p>
+        <p>Find the character counter</p>
+    </div>
+
+    <div class="logic-box">
+        <p>When the user types in the input:</p>
+        <p>read the current text</p>
+        <p>count the characters</p>
+        <p>show the number on the page</p>
+    </div>
+
+    <input class="text-input" type="text" placeholder="Start typing...">
+
+    <p class="character-count">
+        0 characters
+    </p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
