@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Menu Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .description,
+        .logic-box {
+            border: 1px solid #040404;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border: 1px solid #040404;
+        }
+
+        .menu-button {
+            font-size: 1.5rem;
+            padding: 8px 14px;
+            cursor: pointer;
+        }
+
+        .site-nav {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            border: 1px solid #040404;
+        }
+
+        .site-nav.is-open {
+            display: block;
+        }
+
+        .site-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .site-nav li {
+            margin: 10px 0;
+        }
+
+        .site-nav a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <h2>My Website</h2>
+
+        <button class="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+            ☰
+        </button>
+    </header>
+
+    <nav class="site-nav" id="site-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>JavaScript Mini Menu Practice</h1>
+
+    <h2>Imagine someone tells you:</h2>
+
+    <div class="description">
+        <p>
+            “I want a menu button and a navigation menu.
+            On a small screen, the navigation should start closed.
+            When the user clicks the menu button, the navigation should open.
+            If the user clicks the button again, the navigation should close.
+            The button should also keep track of whether the menu is open or closed
+            for accessibility.”
+        </p>
+    </div>
+
+    <h2>Programming logic:</h2>
+
+    <div class="logic-box">
+        <p>Find the navigation</p>
+        <p>Find the menu button</p>
+    </div>
+
+    <div class="logic-box">
+        <p>When the menu button is clicked:</p>
+        <p>check whether the navigation is open</p>
+        <p>if it is closed, open it</p>
+        <p>otherwise, close it</p>
+        <p>update the button accessibility state</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
