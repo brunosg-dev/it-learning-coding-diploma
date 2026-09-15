@@ -19,6 +19,7 @@ const amountInput = document.querySelector("#amount");
 const depositButton = document.querySelector("#deposit-button");
 const withdrawButton = document.querySelector("#withdraw-button");
 
+const transactionMessage = document.querySelector("#transaction-message");
 
 // =========================
 // Display Account
@@ -41,6 +42,11 @@ depositButton.addEventListener("click", function () {
 
     const amount = Number(amountInput.value);
 
+    if (amount <= 0 || Number.isNaN(amount)) {
+        transactionMessage.textContent = "Please enter an amount greater than £0.";
+        return;
+    }
+
     account1.deposit(amount);
 
     renderAccount();
@@ -58,6 +64,16 @@ withdrawButton.addEventListener("click", function () {
 
     const amount = Number(amountInput.value);
 
+    if (amount <= 0 || Number.isNaN(amount)) {
+        transactionMessage.textContent = "Please enter an amount greater than £0.";
+        return;
+    }
+
+     if (amount > account1.balance) {
+        transactionMessage.textContent = "Insufficient funds.";
+        return;
+    }
+    
     account1.withdraw(amount);
 
     renderAccount();
