@@ -224,9 +224,73 @@ body {
     color: #6b7280;
 }
 
+/* ==================================================
+   13. BANKING CONTROLS
+================================================== */
+
+.banking-controls {
+    margin-top: 24px;
+}
+
+
+.banking-controls label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+}
+
+
+.banking-controls input {
+    width: 100%;
+
+    padding: 12px;
+
+    font: inherit;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+
+.banking-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 16px;
+}
+
+
+.banking-actions button {
+    flex: 1;
+
+    padding: 12px 16px;
+
+    font: inherit;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+#deposit-button {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+#withdraw-button {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
 
 /* ==================================================
-   13. RESPONSIVE DESIGN
+   14. RESPONSIVE DESIGN
    Larger Screens
 ================================================== */
 

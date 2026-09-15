@@ -50,7 +50,7 @@
 
             <article class="account-card">
 
-
+                </div>
                 <!-- Account Holder -->
                 <div class="account-detail">
 
@@ -58,7 +58,7 @@
                         Account Holder
                     </span>
 
-                    <strong class="detail-value">
+                    <strong class="detail-value" id="account-holder">
                         Waiting for JavaScript...
                     </strong>
 
@@ -72,7 +72,7 @@
                         Account Number
                     </span>
 
-                    <strong class="detail-value">
+                    <strong class="detail-value" id="account-number">
                         —
                     </strong>
 
@@ -86,7 +86,7 @@
                         Current Balance
                     </span>
 
-                    <strong class="detail-value balance">
+                    <strong class="detail-value balance" id="account-balance">
                         £0.00
                     </strong>
 
@@ -95,6 +95,28 @@
 
             </article>
 
+            <!-- =========================
+             Banking Controls 
+        ========================== -->
+            <div class="banking-controls">
+
+                <label for="amount">
+                    Amount
+                </label>
+
+                <input type="number" id="amount" min="0" placeholder="Enter amount">
+
+                <div class="banking-actions">
+
+                    <button type="button" id="deposit-button">
+                        Deposit
+                    </button>
+
+                    <button type="button" id="withdraw-button">
+                        Withdraw
+                    </button>
+
+                </div>
         </section>
 
 
