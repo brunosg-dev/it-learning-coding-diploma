@@ -1,31 +1,70 @@
 import BankAccount from "./bankAccount.js";
 
-const account1 = new BankAccount("ACC001", "Bruno");
-const account2 = new BankAccount("ACC002", "Jane", 1000);
+// =========================
+// Create Bank Account
+// =========================
+
+const account1 = new BankAccount("ACC001", "Bruno", 1000);
+
+// =========================
+// Find HTML Elements
+// =========================
+
+const accountHolder = document.querySelector("#account-holder");
+const accountNumber = document.querySelector("#account-number");
+const accountBalance = document.querySelector("#account-balance");
+
+const amountInput = document.querySelector("#amount");
+
+const depositButton = document.querySelector("#deposit-button");
+const withdrawButton = document.querySelector("#withdraw-button");
 
 
-// Check starting balances
-account1.checkBalance();
-account2.checkBalance();
+// =========================
+// Display Account
+// =========================
+
+function renderAccount() {
+    accountHolder.textContent = account1.accountHolder;
+    accountNumber.textContent = account1.accountNumber;
+    accountBalance.textContent = `£${account1.balance}`;
+}
+
+renderAccount(); // Display account when page loads
 
 
-// Deposit money
-account1.deposit(500);
-account2.deposit(200);
+// =========================
+// Deposit Money
+// =========================
+
+depositButton.addEventListener("click", function () {
+
+    const amount = Number(amountInput.value);
+
+    account1.deposit(amount);
+
+    renderAccount();
+
+    amountInput.value = "";
+
+});
 
 
-// Withdraw money
-account1.withdraw(200);
-account2.withdraw(300);
+// =========================
+// Withdraw Money
+// =========================
 
+withdrawButton.addEventListener("click", function () {
 
-// Test insufficient funds
-account1.withdraw(1000);
+    const amount = Number(amountInput.value);
 
+    account1.withdraw(amount);
 
-// Check final balances
-account1.checkBalance();
-account2.checkBalance();
+    renderAccount();
+
+    amountInput.value = "";
+
+});
 
 /*
 Why ./? The ./ means: “Look in the current folder.”
