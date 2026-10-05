@@ -36,4 +36,11 @@ Everyday meaning:
 “I need you to give me some information when you use me.” 
 
 What does default mean? “This is the main thing this file is providing.”
+
+default export
+→ only ONE per file
+
+named exports
+→ you can have MANY
+used default because BankAccount is the main responsibility of this file.
 */
