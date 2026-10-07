@@ -1,0 +1,37 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    padding: 20px 0;
+}
+
+body {
+    background-color: #7e7e8c;
+    text-align: center;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #333;
+    gap: 20px; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
