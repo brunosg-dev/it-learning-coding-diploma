@@ -4,27 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Practice.</title>
+    <title>DOM Free Practice</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <main class="main-content">
+
         <div class="container">
-            <h1>Free Practice</h1>
-            <h2>Open the console to see the output.</h2>
-            <p>To see the output, open the browser's developer console using F12 or Ctrl+Shift+I.</p>
+
+            <h1 id="main-title">DOM Free Practice</h1>
+
+            <h2 class="section-title">Finding Elements</h2>
+
+            <p class="message">First paragraph</p>
+            <p class="message">Second paragraph</p>
+            <p class="message">Third paragraph</p>
+
+            <section id="practice-section" class="practice-box">
+                <h2>Practice Section</h2>
+
+                <p id="description">
+                    This element can be selected, styled, given classes and attributes.
+                </p>
+
+                <button id="action-button" class="btn">
+                    Practice Button
+                </button>
+            </section>
+
+            <section class="image-section">
+                <h2>Attribute Practice</h2>
+
+                <img id="practice-image" src="https://via.placeholder.com/200" alt="Practice placeholder image">
+            </section>
+
+            <section id="dynamic-area" class="dynamic-area">
+                <h2>Adding Elements</h2>
+
+                <p>New elements can be added below this text.</p>
+            </section>
 
         </div>
 
-        <footer class="footer">
-            <p>Created by <a href="https://github.com/yourusername" target="_blank">Bruno</a></p>
-        </footer>
-        
     </main>
 
+    <footer class="footer">
+        <p>
+            Created by
+            <a id="profile-link" href="https://github.com/yourusername" target="_blank">
+                Bruno
+            </a>
+        </p>
+    </footer>
 
     <script src="index.js"></script>
+
 </body>
 
 </html>
